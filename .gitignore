@@ -1,0 +1,34 @@
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# dotenv environment variables
+.env
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+
+# Test coverage
+coverage/
+
+# Build output
+dist/
+build/
+
+# Optional: if using PM2 logs
+pids/
+logs/
+*.pid
+*.seed
+
+# Public uploads (if any)
+public/uploads/
