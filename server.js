@@ -23,6 +23,9 @@ app.use("/api", productRouter);
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/public/login.html");
 });
+app.get("/admin", (req, res) => {
+  res.sendFile(__dirname + "/public/admin.html");
+});
 
 // Connect to MongoDB and start server
 mongoose.connect(process.env.MONGO_URI)
