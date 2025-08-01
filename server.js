@@ -14,14 +14,14 @@ const PORT = process.env.PORT || 5000;
 // Middleware
 app.use(cors());
 app.use(express.json());
-
+app.use(express.static("public"));
 // Routes
 app.use("/api/auth", authRouter);
 app.use("/api", productRouter);
 
 // Root route (optional)
 app.get("/", (req, res) => {
-  res.send("API is running...");
+  res.sendFile(__dirname + "/public/login.html");
 });
 
 // Connect to MongoDB and start server
